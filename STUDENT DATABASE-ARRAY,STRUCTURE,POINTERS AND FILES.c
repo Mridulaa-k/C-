@@ -2,28 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Define a structure called Student
 struct Student {
     char name[50];
     int age;
     float gpa;
 };
 
-// Function prototypes
 void writeToFile(struct Student *students, int n);
 void readFromFile();
 
 int main() {
     FILE *fptr;
-    struct Student students[100];  // Array to hold multiple students
-    struct Student *ptr;           // Pointer to access students
+    struct Student students[100]; 
+    struct Student *ptr;
     int n, i;
     
     // Get the number of students
     printf("Enter the number of students: ");
     scanf("%d", &n);
     
-    // Assign pointer to the students array
     ptr = students;
     
     // Input details of each student
@@ -47,7 +44,6 @@ int main() {
     return 0;
 }
 
-// Function to write student data to a file
 void writeToFile(struct Student *students, int n) {
     FILE *fptr = fopen("student_data.txt", "w");
     if (fptr == NULL) {
@@ -66,7 +62,6 @@ void writeToFile(struct Student *students, int n) {
     printf("Data written to file successfully.\n");
 }
 
-// Function to read student data from a file
 void readFromFile() {
     FILE *fptr = fopen("student_data.txt", "r");
     if (fptr == NULL) {
