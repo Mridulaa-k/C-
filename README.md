@@ -1,5 +1,6 @@
 # C-THE QUESTION IS
 
+1)**EMPLOYEE STRUCT- STRUCTURE**
 1. Declare a structure for an employee with the following attributes:
    - ID
    - Name
@@ -17,3 +18,5 @@
      - If experience is below 3 years, give 5% of the basic salary as a remuneration.
 
 3. Define the names of the departments using enumerated data type.
+
+2)**STUDENT DATABASE-ARRAY,STRUCTURE,POINTER,FILES**
